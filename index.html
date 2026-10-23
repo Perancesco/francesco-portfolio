@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F3EF">
+  <meta name="description" content="Francesco Alexander — developer, technical mentor, and product-minded builder. Selected software projects, experience, and technical interests.">
+  <title>Francesco Alexander — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=30">
+  <script defer src="script.js?v=23"></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <canvas id="constellation" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor cursor-dot" aria-hidden="true"></div><div class="cursor cursor-ring" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Francesco Alexander, home"><span class="mark">FA</span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#work"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>Projects</a><a href="#about"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>About</a><a href="#experience"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h7"/></svg>Experience</a><a href="#gallery"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="m7 5 1-2h8l1 2"/></svg>Gallery</a><a href="#toolkit"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>Toolkit</a><a href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Contact</a>
+    </nav>
+    <a class="availability" href="#contact"><i></i> OPEN TO OPPORTUNITIES <b>↗</b></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span><span>DEVELOPER</span><i></i><span>TECHNICAL MENTOR</span><i></i><span>BUILDER</span></p>
+          <h1>Ideas are<br>cheap.<br><span class="headline-outline">Execution</span><br>is <em>everything.</em></h1>
+          <p class="hero-roleline"><span class="role-prefix">I’m a</span> <span id="typingRole" aria-live="polite">developer</span><span class="typing-caret" aria-hidden="true"></span></p>
+          <p class="hero-description">I’m Francesco — an Informatics student and developer who likes turning messy problems into useful digital products. I build across web and mobile, lead projects, and teach others how to think through code.</p>
+          <div class="hero-ctas"><a class="button button-light magnetic" href="#work">Explore my work <span>↘</span></a><a class="button button-text magnetic" href="#contact">Let’s talk <span>↗</span></a></div>
+          <div class="hero-footnote mono"><span>01 — BUILD WITH INTENT</span><span>02 — LEARN IN PUBLIC</span><span>03 — SHIP, THEN IMPROVE</span></div>
+        </div>
+        <figure class="hero-portrait" aria-label="Portrait of Francesco Alexander">
+          <div class="portrait-frame">
+            <img src="assets/francesco-portrait.jpeg" alt="Francesco Alexander, Informatics student and developer" fetchpriority="high">
+            <div class="portrait-topline mono"><span>PROFILE / 2026</span></div>
+            <div class="profile-fact" aria-label="Born at September 15, 2006, age 20">
+              <span class="fact-cake" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 15h16v11H8zM6 26h20M6 15c0-2 2-3 5-3s5 1 5 3c0-2 2-3 5-3s5 1 5 3"/><path d="M12 9c-1-1 1-2 0-4M20 9c-1-1 1-2 0-4"/></svg></span>
+              <span class="fact-copy"><small class="mono">BORN AT</small><strong>15 September 2006</strong><em class="mono"><span id="profileAge">20</span> YEARS OLD</em></span>
+              <span class="fact-spark" aria-hidden="true">✦</span>
+            </div>
+          </div>
+          <div class="portrait-social" aria-label="Profile interactions">
+            <button class="social-action heart-action" id="profileLike" type="button" aria-label="Like profile" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.3 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+              <span>Like</span>
+            </button>
+            <button class="social-action repost-action" id="profileRepost" type="button" aria-label="Repost profile" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m17 2 4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg>
+              <span>Boost</span>
+            </button>
+            <button class="social-action comment-action" id="profileComment" type="button" aria-label="Open contact options" aria-expanded="false" aria-controls="profileNote">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg>
+              <span>Say hi</span>
+            </button>
+          </div>
+          <div class="profile-note" id="profileNote" hidden>
+            <span class="profile-note-kicker mono">OPEN A CONVERSATION</span>
+            <p>Have an idea, a question, or a project in mind?</p>
+            <a href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+          </div>
+          <figcaption class="hero-portrait-caption">
+            <div class="portrait-info">
+              <strong>Francesco Alexander</strong>
+              <span class="mono">INFORMATICS · DEVELOPER · BUILDER</span>
+            </div>
+            <span class="portrait-status mono"><i></i> AVAILABLE</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="hero-bottom"><span class="mono">SCROLL TO EXPLORE</span><span class="scroll-line"><i></i></span><span class="mono">PROJECTS ↓</span></div>
+    </section>
+
+    <section class="signal-strip" aria-label="Experience highlights"><div class="signal-track"><span>SOFTWARE DEVELOPMENT</span><i>✳</i><span>PRODUCT THINKING</span><i>✳</i><span>TECHNICAL MENTORING</span><i>✳</i><span>ENTREPRENEURSHIP</span><i>✳</i><span>WEB &amp; MOBILE</span><i>✳</i><span>FULL-STACK</span><i>✳</i><span>SOFTWARE DEVELOPMENT</span><i>✳</i><span>PRODUCT THINKING</span><i>✳</i><span>TECHNICAL MENTORING</span><i>✳</i><span>ENTREPRENEURSHIP</span><i>✳</i><span>WEB &amp; MOBILE</span><i>✳</i><span>FULL-STACK</span><i>✳</i></div></section>
+
+    <section class="work-section section-shell" id="work">
+      <div class="work-divider reveal" aria-label="Projects section">
+        <div class="work-divider-inner">
+          <div class="work-divider-index"><span>01</span><i></i></div>
+          <div class="work-divider-title"><small class="mono">PROJECT ARCHIVE</small><strong>PROJECTS</strong></div>
+          <div class="work-divider-rail" aria-hidden="true"><span></span></div>
+          <span class="work-divider-note mono">PAST BUILDS <b>→</b> PROOF</span>
+          <span class="work-divider-arrow" aria-hidden="true">↘</span>
+        </div>
+      </div>
+      <div class="section-top reveal"><div><p class="eyebrow mono">PROJECTS / BUILT &amp; SHIPPED</p><h2>Things I’ve <em>built.</em></h2></div><p class="section-intro">A closer look at projects I’ve worked on—from an award-winning learning app to web platforms and product concepts—plus the people, tools, and decisions behind each one.</p></div>
+      <div class="work-filter reveal"><span class="mono">EXPLORE PROJECTS</span><div class="filter-buttons"><button class="filter-btn active" data-filter="all">All projects <span>04</span></button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="mobile">Mobile</button><button class="filter-btn" data-filter="product">Product</button></div></div>
+      <div class="project-list">
+        <article class="project-row reveal" data-category="mobile product">
+          <div class="project-number mono">01 <span>/ 04</span></div>
+          <div class="project-art art-mypskd" data-tilt>
+            <div class="art-top mono"><span>EDTECH / MOBILE</span><span>CASE_001</span></div>
+            <div class="mock-device">
+              <div class="device-notch"></div><div class="device-app">
+                <div class="mock-greeting"><small>MONDAY, 08:30 AM</small><b>Keep learning.<br><em>Keep growing.</em></b></div>
+                <div class="mock-metrics"><div><small>COURSES</small><b>04</b></div><div><small>PROGRESS</small><b>76%</b></div></div>
+                <div class="mock-course"><span class="course-icon">M</span><div><small>MATHEMATICS</small><b>Introduction to Algebra</b><i><span></span></i></div><span>↗</span></div>
+                <div class="mock-course"><span class="course-icon course-purple">S</span><div><small>SCIENCE</small><b>Exploring Our World</b><i><span></span></i></div><span>↗</span></div>
+                <div class="mock-nav"><span>⌂</span><span>▦</span><span>◷</span><span>◎</span></div>
+              </div>
+            </div>
+            <div class="art-stamp mono">MOBILE / MVP</div>
+          </div>
+          <div class="project-detail"><div class="project-meta mono"><span>EDTECH</span><span>2025 — 2026</span></div><h3>MyPSKD<span class="project-arrow">↗</span></h3><p class="project-lead">Making school workflows feel more connected.</p><div class="project-award"><span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 1v4m-4 3h8m-7-3h6v3H9z"/></svg></span><span><b>BEST PROJECT IN COHORT</b><small>Software Development · MyPSKD</small></span></div><p class="project-copy">An MVP learning management system built around the needs of administrators, teachers, and students. The project explores how mobile experiences and backend services can support everyday learning workflows.</p><div class="tech-stack"><span>Flutter</span><span>Dart</span><span>Node.js</span><span>Express</span><span>Firebase</span></div><div class="project-actions"><button class="case-link" data-project="mypskd">Explore case study <span>↗</span></button><a class="repo-link" href="https://github.com/Elvan1210/SoftwareDevelopment-Project-Kelompok9" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+        </article>
+
+        <article class="project-row reverse reveal" data-category="web product">
+          <div class="project-number mono">02 <span>/ 04</span></div>
+          <div class="project-art art-uccd" data-tilt>
+            <div class="art-top mono"><span>STUDENT ECOSYSTEM / WEB</span><span>CASE_002</span></div>
+            <div class="uccd-window"><div class="uccd-nav"><b>UCCD<span>•</span></b><div>DISCOVER &nbsp; PROGRAMS &nbsp; COMMUNITY</div><button>EXPLORE ↗</button></div><div class="uccd-hero"><small>STUDENT ECOSYSTEM / WEB PLATFORM</small><b>Make your<br><i>next move.</i></b><p>Opportunities, learning, and community in one place.</p><div class="uccd-pills"><span>BOOTCAMPS</span><span>TALKS</span><span>ACHIEVEMENTS</span></div></div><div class="uccd-foot"><span>01 / DISCOVER</span><span>02 / PARTICIPATE</span><span>03 / GROW</span></div></div>
+            <div class="art-stamp mono">TEAM LEAD / WEB</div>
+          </div>
+          <div class="project-detail"><div class="project-meta mono"><span>WEB PLATFORM</span><span>TEAM PROJECT</span></div><h3>UCCD — Student Hub<span class="project-arrow">↗</span></h3><p class="project-lead">A clearer front door to campus opportunities.</p><p class="project-copy">A web-based information system designed to centralize student organization activities and membership-related information. I contributed as a lead developer in a team setting.</p><div class="tech-stack"><span>Next.js</span><span>Bootstrap</span><span>Node.js</span><span>Express</span><span>Prisma</span><span>MongoDB</span></div><div class="project-actions"><button class="case-link" data-project="uccd">Explore case study <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/UAS-Front-End-Kelompok-8" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+        </article>
+
+        <article class="project-row reveal" data-category="web">
+          <div class="project-number mono">03 <span>/ 04</span></div>
+          <div class="project-art art-toko" data-tilt>
+            <div class="art-top mono"><span>COMMERCE / WEB</span><span>CASE_003</span></div>
+            <div class="shop-window"><div class="shop-nav"><b>toko<span>clone.</span></b><div>Discover &nbsp; Categories &nbsp; Deals</div><span class="shop-search">⌕ &nbsp; Search items</span></div><div class="shop-hero"><div><small>THE DAILY EDIT</small><b>Find your<br>next favourite.</b><span>SHOP COLLECTION ↗</span></div><div class="shop-orb"><span>NEW<br>DROP</span></div></div><div class="shop-grid"><div><span class="shop-product p1">◈</span><small>TECH / AUDIO</small><b>Wireless sound</b></div><div><span class="shop-product p2">◉</span><small>DAILY / CARRY</small><b>Everyday essentials</b></div><div><span class="shop-product p3">✳</span><small>STYLE / OBJECTS</small><b>Made for living</b></div></div></div>
+            <div class="art-stamp mono">E-COMMERCE EXPERIENCE</div>
+          </div>
+          <div class="project-detail"><div class="project-meta mono"><span>E-COMMERCE</span><span>COURSEWORK</span></div><h3>Tokoclone<span class="project-arrow">↗</span></h3><p class="project-lead">Exploring the fundamentals of online shopping.</p><p class="project-copy">An e-commerce website project inspired by marketplace experiences. The build is an opportunity to work through the structure and interaction patterns of a shopping platform without assuming feature parity with a production marketplace.</p><div class="tech-stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Git</span></div><div class="project-actions"><button class="case-link" data-project="tokoclone">Explore case study <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/uasbackend" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+        </article>
+
+        <article class="project-row reverse reveal" data-category="mobile product">
+          <div class="project-number mono">04 <span>/ 04</span></div>
+          <div class="project-art art-loyalty" data-tilt>
+            <div class="art-top mono"><span>LOYALTY / MOBILE</span><span>CASE_004</span></div>
+            <div class="loyalty-phone"><div class="loyalty-notch"></div><div class="loyalty-brand">MEMBER<span>+</span><small>YOUR MALL, YOUR MOMENTS</small></div><div class="loyalty-card"><small>MEMBER CARD</small><b>FRANCESCO A.</b><span>•••• &nbsp; 2048</span><i>✳</i></div><div class="loyalty-section"><span>YOUR EXPERIENCE</span><b>Discover something worth coming back for.</b></div><div class="loyalty-tiles"><div>✦<small>MEMBERSHIP</small></div><div>⌁<small>DISCOVER</small></div><div>◷<small>ACTIVITY</small></div></div><div class="loyalty-bottom">HOME　 DISCOVER　 ACCOUNT</div></div>
+            <div class="art-stamp mono">DIGITAL MEMBERSHIP</div>
+          </div>
+          <div class="project-detail"><div class="project-meta mono"><span>CUSTOMER EXPERIENCE</span><span>MOBILE CONCEPT</span></div><h3>Mall Loyalty Member App<span class="project-arrow">↗</span></h3><p class="project-lead">Making the member experience more accessible.</p><p class="project-copy">A digital membership app concept for a mall environment. The project is framed around the member journey and how a mobile interface can help customers access membership-related experiences.</p><div class="tech-stack"><span>Mobile UI</span><span>Product design</span><span>Membership</span></div><div class="project-actions"><button class="case-link" data-project="loyalty">Explore case study <span>↗</span></button><span class="repo-link muted">Details available on request</span></div></div>
+        </article>
+      </div>
+      <p class="visual-note mono">NOTE / PROJECT VISUALS ARE CONCEPTUAL UI RECREATIONS, NOT PRODUCT SCREENSHOTS.</p>
+    </section>
+
+    <section class="manifesto-section" id="about">
+      <div class="manifesto-shell section-shell">
+        <div class="manifesto-side reveal">
+          <p class="eyebrow mono">02 / THE APPROACH</p>
+          <aside class="about-snapshot" aria-label="Profile snapshot">
+            <div class="about-snapshot-top mono"><span>PROFILE NOTES</span><span>02 — 05</span></div>
+            <div class="about-monogram" aria-hidden="true">F<span>/</span>A</div>
+            <p class="about-snapshot-kicker mono">THE SHORT VERSION</p>
+            <h3>Builder by practice.<br><em>Curious by default.</em></h3>
+            <p class="about-snapshot-copy">I like turning unclear problems into useful products, then explaining what I learn along the way.</p>
+            <div class="about-stats">
+              <div><strong>200+</strong><span>students supported</span></div>
+              <div><strong>30k+</strong><span>customers served</span></div>
+            </div>
+            <div class="about-values mono"><span>BUILD</span><i>·</i><span>TEACH</span><i>·</i><span>IMPROVE</span></div>
+          </aside>
+        </div>
+        <div class="manifesto-copy reveal"><p class="manifesto-label mono">NOT JUST CODE. CONTEXT.</p><h2>Good software starts with understanding <em>people.</em></h2><p class="manifesto-body">I’m studying Informatics at Tarumanagara University, but I’m interested in more than the implementation itself. I care about why a product needs to exist, who it serves, how a team works together, and what makes a solution useful beyond a demo.</p><p class="manifesto-body">Building projects, supporting students as a teaching assistant, and running an online business have each taught me a different part of the same lesson: technology matters most when it solves a real problem.</p><div class="manifesto-signature"><span class="signature-mark">F.</span><span><b>Francesco Alexander</b><small>DEVELOPER / LIFELONG STUDENT</small></span></div></div>
+      </div>
+    </section>
+
+    <section class="experience-section section-shell" id="experience">
+      <div class="section-top reveal"><div><p class="eyebrow mono">03 / EXPERIENCE</p><h2>Learning by<br><em>doing.</em></h2></div><p class="section-intro">Different environments have sharpened different skills — from explaining technical concepts to understanding customers and coordinating work.</p></div>
+      <div class="experience-list">
+        <article class="experience-item reveal"><div class="experience-date mono">2025 — PRESENT</div><div class="experience-symbol">⌘</div><div class="experience-content"><div class="experience-title"><h3>Teaching Assistant</h3><span>Faculty of Information Technology · UNTAR</span></div><p>Support teaching and practical learning across programming and systems subjects, helping students work through concepts, coding exercises, and debugging. Experience across 7 classes and 200+ students.</p><div class="experience-tags"><span>Technical communication</span><span>Mentoring</span><span>Problem-solving</span></div></div><span class="experience-index mono">EXP.01</span></article>
+        <article class="experience-item reveal"><div class="experience-date mono">2021 — PRESENT</div><div class="experience-symbol symbol-lime">↗</div><div class="experience-content"><div class="experience-title"><h3>Online Business Owner</h3><span>Independent · itemku.com</span></div><p>Operate an online business and manage customer-facing workflows. Experience serving 30,000+ customers has built practical instincts around market needs, communication, service quality, and operations.</p><div class="experience-tags"><span>Entrepreneurship</span><span>Customer experience</span><span>Operations</span></div></div><span class="experience-index mono">EXP.02</span></article>
+        <article class="experience-item reveal"><div class="experience-date mono">2019 — 2023</div><div class="experience-symbol symbol-purple">✳</div><div class="experience-content"><div class="experience-title"><h3>Private Mathematics Tutor</h3><span>Independent</span></div><p>Taught mathematics to more than 15 elementary school students, adapting explanations and learning approaches to make concepts easier to understand.</p><div class="experience-tags"><span>Communication</span><span>Adaptability</span><span>Teaching</span></div></div><span class="experience-index mono">EXP.03</span></article>
+        <article class="experience-item reveal"><div class="experience-date mono">CAMPUS LIFE</div><div class="experience-symbol symbol-orange">↗</div><div class="experience-content"><div class="experience-title"><h3>Organization & Event Involvement</h3><span>Tarumanagara English Club · Campus Event Crews</span></div><p>Participated in campus organizations and event operations, building experience in teamwork, coordination, and communication across different groups.</p><div class="experience-tags"><span>Teamwork</span><span>Coordination</span><span>Communication</span></div></div><span class="experience-index mono">EXP.04</span></article>
+      </div>
+    </section>
+
+    <section class="gallery-section section-shell" id="gallery">
+      <div class="section-top reveal">
+        <div>
+          <p class="eyebrow mono">04 / PROOF OF WORK</p>
+          <h2>Behind the<br><em>scenes.</em></h2>
+        </div>
+        <p class="section-intro">Real moments from real work — teaching, building, presenting, and shipping. More coming soon.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--tall reveal" data-label="Teaching Assistant · UNTAR">
+          <div class="gallery-placeholder">
+            <span class="gallery-tag mono">Teaching Assistant</span>
+            <span class="gallery-icon">⌘</span>
+            <p>Classroom & Mentoring Sessions</p>
+            <small>UNTAR · 7 classes · 200+ students</small>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-label="Online Business · itemku">
+          <div class="gallery-placeholder">
+            <span class="gallery-tag mono">Entrepreneurship</span>
+            <span class="gallery-icon">↗</span>
+            <p>E-commerce Store & Metrics</p>
+            <small>itemku · 30k+ customers served</small>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-label="Project Demo · MyPSKD">
+          <div class="gallery-placeholder">
+            <span class="gallery-tag mono">Mobile Project</span>
+            <span class="gallery-icon">◈</span>
+            <p>MyPSKD LMS App in Action</p>
+            <small>Flutter · Dart · Firebase</small>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--wide reveal" data-label="Team Work · UCCD Project">
+          <div class="gallery-placeholder">
+            <span class="gallery-tag mono">Team Leadership</span>
+            <span class="gallery-icon">✳</span>
+            <p>UCCD Student Hub Collaboration</p>
+            <small>Team sprint & presentation</small>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-label="Campus Life · Events">
+          <div class="gallery-placeholder">
+            <span class="gallery-tag mono">Campus Engagement</span>
+            <span class="gallery-icon">◷</span>
+            <p>English Club & Event Operations</p>
+            <small>Event committee & logistics</small>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-label="Achievements · Certificates">
+          <div class="gallery-placeholder">
+            <span class="gallery-tag mono">Recognition</span>
+            <span class="gallery-icon">✦</span>
+            <p>Certifications & Achievements</p>
+            <small>Academic & technical milestones</small>
+          </div>
+        </div>
+      </div>
+      <p class="gallery-note mono">GALLERY IS BEING CURATED — PHOTOS ADDED AS COLLECTED</p>
+    </section>
+
+    <section class="capabilities-section" id="toolkit">
+      <div class="section-shell capabilities-inner">
+        <div class="capabilities-head reveal"><p class="eyebrow mono">05 / TOOLKIT</p><h2>Tools are tools.<br><em>Judgment is the skill.</em></h2><p>Technologies I’ve worked with across coursework, projects, and experimentation. Depth varies by tool and context.</p></div>
+        <div class="capability-grid">
+          <div class="capability-card reveal"><span class="cap-num mono">01 / BUILD</span><div class="cap-icon">⌘</div><h3>Software Development</h3><p>Turning requirements into maintainable application flows.</p><div class="cap-tags"><span>JavaScript</span><span>C++</span><span>Flutter / Dart</span><span>Node.js</span><span>Express</span><span>Git</span></div></div>
+          <div class="capability-card reveal"><span class="cap-num mono">02 / CONNECT</span><div class="cap-icon cap-purple">⌁</div><h3>Backend & Data</h3><p>Working with application services, authentication, and persistence.</p><div class="cap-tags"><span>Firebase</span><span>Firestore</span><span>MongoDB</span><span>Prisma</span><span>MySQL</span></div></div>
+          <div class="capability-card reveal"><span class="cap-num mono">03 / EXPLORE</span><div class="cap-icon cap-orange">✳</div><h3>Data & AI</h3><p>Exploring applied machine learning and computer vision approaches.</p><div class="cap-tags"><span>Machine Learning</span><span>NLP</span><span>Computer Vision</span><span>MediaPipe</span><span>MobileNetV3</span><span>SVM</span><span>Random Forest</span><span>BERT</span></div></div>
+          <div class="capability-card reveal"><span class="cap-num mono">04 / ENABLE</span><div class="cap-icon cap-lime">↗</div><h3>People & Product</h3><p>Bridging implementation with communication, context, and delivery.</p><div class="cap-tags"><span>Technical mentoring</span><span>Teamwork</span><span>Problem-solving</span><span>Product thinking</span><span>Entrepreneurship</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section section-shell reveal">
+      <div class="education-left"><p class="eyebrow mono">A CONTINUOUS PROCESS</p><h2>Curiosity is<br>part of the <em>stack.</em></h2></div>
+      <div class="education-right"><div class="education-item"><span class="mono">EDUCATION / 01</span><h3>Universitas Tarumanagara</h3><p>Bachelor’s Degree · Informatics</p><small>Currently studying</small></div><div class="education-item"><span class="mono">FOUNDATION / 02</span><h3>High School</h3><p>Graduated in 2024</p><small>Academic foundation</small></div><div class="education-note">Always learning. Always iterating. Always looking for the next problem worth solving.</div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-orb orb-one"></div><div class="contact-orb orb-two"></div>
+      <div class="contact-inner section-shell reveal"><p class="eyebrow mono"><span class="eyebrow-line"></span> 06 / NEXT CHAPTER</p><h2>Have a problem<br>worth <em>solving?</em></h2><p>I’m open to internship opportunities, collaborative projects, and conversations about building useful things.</p><div class="contact-actions"><a class="button button-light magnetic" href="mailto:francescoalexander@example.com">Start a conversation <span>↗</span></a><a class="button button-outline magnetic" href="https://github.com/Perancesco" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a></div><div class="contact-links mono"><button id="copyEmail" data-email="francescoalexander@example.com">COPY EMAIL <span>⧉</span></button><a href="https://github.com/Perancesco" target="_blank" rel="noreferrer">GITHUB ↗</a><span>JAKARTA, ID</span></div><p class="contact-note">Replace the example email with your preferred contact address before publishing.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark footer-wordmark" href="#top"><span class="mark">F<span>/</span></span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a><span class="footer-note mono">DESIGNED TO EVOLVE / © <span id="year">2026</span></span><a class="back-top mono" href="#top">BACK TO TOP ↑</a></footer>
+
+  <dialog class="case-modal" id="caseModal"><button class="modal-close" id="modalClose" aria-label="Close case study">×</button><div id="modalContent"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+</body>
+</html>
