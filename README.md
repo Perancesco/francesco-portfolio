@@ -47,3 +47,12 @@ V14 visual update: added distinct warm-cream shading for the hero, work/projects
 - Restyled the three hero principles as small editorial chips with green markers and hover feedback.
 - Improved the “Scroll to explore” row and its animated line.
 - Added narrow-screen adjustments for the chips and scroll cue.
+
+## Deploy to Vercel
+This is a static HTML/CSS/JavaScript portfolio. It has no database, backend service, npm install, or build step.
+
+1. Push this folder to a GitHub repository, or run `vercel` from this folder with the Vercel CLI.
+2. In Vercel, select the **Other** framework preset, leave the Build Command blank, and set the Output Directory to `.`.
+3. Keep `index.html`, `styles.css`, `script.js`, and `assets/` together in the project root so relative image paths continue to resolve.
+
+Vercel's static-site setup does not need a build step for HTML, CSS, and client-side JavaScript. See [Vercel's static build guidance](https://vercel.com/docs/builds).

@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=30">
-  <script defer src="script.js?v=23"></script>
+  <link rel="stylesheet" href="styles.css?v=88">
+  <script defer src="script.js?v=46"></script>
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
@@ -20,7 +20,7 @@
   <header class="site-header" id="top">
     <a class="wordmark" href="#top" aria-label="Francesco Alexander, home"><span class="mark">FA</span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#work"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>Projects</a><a href="#about"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>About</a><a href="#experience"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h7"/></svg>Experience</a><a href="#gallery"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="m7 5 1-2h8l1 2"/></svg>Gallery</a><a href="#toolkit"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>Toolkit</a><a href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Contact</a>
+      <a href="#work"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>Projects</a><a href="#about"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>About</a><a href="#experience"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h7"/></svg>Experience</a><a href="#toolkit"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>Toolkit</a><a href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Contact</a>
     </nav>
     <a class="availability" href="#contact"><i></i> OPEN TO OPPORTUNITIES <b>↗</b></a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
@@ -96,7 +96,8 @@
         <article class="project-row reveal" data-category="mobile product">
           <div class="project-number mono">01 <span>/ 04</span></div>
           <div class="project-art art-mypskd" data-tilt>
-            <div class="art-top mono"><span>EDTECH / MOBILE</span><span>CASE_001</span></div>
+            <img class="project-cover" src="assets/project/MyPSKD/Web/wps1.jpeg" alt="MyPSKD sign-in and account access screen">
+            <div class="art-top mono"><span>EDTECH / MULTI-PLATFORM</span><span>CASE_001</span></div>
             <div class="mock-device">
               <div class="device-notch"></div><div class="device-app">
                 <div class="mock-greeting"><small>MONDAY, 08:30 AM</small><b>Keep learning.<br><em>Keep growing.</em></b></div>
@@ -108,159 +109,144 @@
             </div>
             <div class="art-stamp mono">MOBILE / MVP</div>
           </div>
-          <div class="project-detail"><div class="project-meta mono"><span>EDTECH</span><span>2025 — 2026</span></div><h3>MyPSKD<span class="project-arrow">↗</span></h3><p class="project-lead">Making school workflows feel more connected.</p><div class="project-award"><span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 1v4m-4 3h8m-7-3h6v3H9z"/></svg></span><span><b>BEST PROJECT IN COHORT</b><small>Software Development · MyPSKD</small></span></div><p class="project-copy">An MVP learning management system built around the needs of administrators, teachers, and students. The project explores how mobile experiences and backend services can support everyday learning workflows.</p><div class="tech-stack"><span>Flutter</span><span>Dart</span><span>Node.js</span><span>Express</span><span>Firebase</span></div><div class="project-actions"><button class="case-link" data-project="mypskd">Explore case study <span>↗</span></button><a class="repo-link" href="https://github.com/Elvan1210/SoftwareDevelopment-Project-Kelompok9" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+          <div class="project-detail"><div class="project-meta mono"><span>EDTECH</span><span>2025 — 2026</span></div><h3>MyPSKD<span class="project-arrow">↗</span></h3><p class="project-lead">Making school workflows feel more connected.</p><div class="project-award"><span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 1v4m-4 3h8m-7-3h6v3H9z"/></svg></span><span><b>BEST PROJECT IN COHORT</b><small>Software Development · MyPSKD</small></span></div><p class="project-copy">An MVP learning management system built around the needs of administrators, teachers, and students. The project explores how mobile experiences and backend services can support everyday learning workflows.</p><div class="tech-stack"><span>Flutter</span><span>Dart</span><span>Node.js</span><span>Express</span><span>Firebase</span></div><div class="project-actions"><button class="case-link" data-project="mypskd">Screens &amp; demo <span>↗</span></button><a class="repo-link" href="https://github.com/Elvan1210/SoftwareDevelopment-Project-Kelompok9" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
         </article>
 
         <article class="project-row reverse reveal" data-category="web product">
           <div class="project-number mono">02 <span>/ 04</span></div>
           <div class="project-art art-uccd" data-tilt>
+            <img class="project-cover" src="assets/project/UCCD/uccd4.png" alt="UCCD student opportunities website screenshot">
             <div class="art-top mono"><span>STUDENT ECOSYSTEM / WEB</span><span>CASE_002</span></div>
             <div class="uccd-window"><div class="uccd-nav"><b>UCCD<span>•</span></b><div>DISCOVER &nbsp; PROGRAMS &nbsp; COMMUNITY</div><button>EXPLORE ↗</button></div><div class="uccd-hero"><small>STUDENT ECOSYSTEM / WEB PLATFORM</small><b>Make your<br><i>next move.</i></b><p>Opportunities, learning, and community in one place.</p><div class="uccd-pills"><span>BOOTCAMPS</span><span>TALKS</span><span>ACHIEVEMENTS</span></div></div><div class="uccd-foot"><span>01 / DISCOVER</span><span>02 / PARTICIPATE</span><span>03 / GROW</span></div></div>
             <div class="art-stamp mono">TEAM LEAD / WEB</div>
           </div>
-          <div class="project-detail"><div class="project-meta mono"><span>WEB PLATFORM</span><span>TEAM PROJECT</span></div><h3>UCCD — Student Hub<span class="project-arrow">↗</span></h3><p class="project-lead">A clearer front door to campus opportunities.</p><p class="project-copy">A web-based information system designed to centralize student organization activities and membership-related information. I contributed as a lead developer in a team setting.</p><div class="tech-stack"><span>Next.js</span><span>Bootstrap</span><span>Node.js</span><span>Express</span><span>Prisma</span><span>MongoDB</span></div><div class="project-actions"><button class="case-link" data-project="uccd">Explore case study <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/UAS-Front-End-Kelompok-8" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+          <div class="project-detail"><div class="project-meta mono"><span>WEB PLATFORM</span><span>TEAM PROJECT</span></div><h3>UCCD — Student Hub<span class="project-arrow">↗</span></h3><p class="project-lead">A clearer front door to campus opportunities.</p><p class="project-copy">A web-based information system designed to centralize student organization activities and membership-related information. I contributed as a lead developer in a team setting.</p><div class="tech-stack"><span>Next.js</span><span>Bootstrap</span><span>Node.js</span><span>Express</span><span>Prisma</span><span>MongoDB</span></div><div class="project-actions"><button class="case-link" data-project="uccd">Screens &amp; demo <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/UAS-Front-End-Kelompok-8" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
         </article>
 
         <article class="project-row reveal" data-category="web">
           <div class="project-number mono">03 <span>/ 04</span></div>
           <div class="project-art art-toko" data-tilt>
+            <img class="project-cover" src="assets/project/Tokoclone/Toko10.png" alt="Tokoclone online shop product catalogue screenshot">
             <div class="art-top mono"><span>COMMERCE / WEB</span><span>CASE_003</span></div>
             <div class="shop-window"><div class="shop-nav"><b>toko<span>clone.</span></b><div>Discover &nbsp; Categories &nbsp; Deals</div><span class="shop-search">⌕ &nbsp; Search items</span></div><div class="shop-hero"><div><small>THE DAILY EDIT</small><b>Find your<br>next favourite.</b><span>SHOP COLLECTION ↗</span></div><div class="shop-orb"><span>NEW<br>DROP</span></div></div><div class="shop-grid"><div><span class="shop-product p1">◈</span><small>TECH / AUDIO</small><b>Wireless sound</b></div><div><span class="shop-product p2">◉</span><small>DAILY / CARRY</small><b>Everyday essentials</b></div><div><span class="shop-product p3">✳</span><small>STYLE / OBJECTS</small><b>Made for living</b></div></div></div>
             <div class="art-stamp mono">E-COMMERCE EXPERIENCE</div>
           </div>
-          <div class="project-detail"><div class="project-meta mono"><span>E-COMMERCE</span><span>COURSEWORK</span></div><h3>Tokoclone<span class="project-arrow">↗</span></h3><p class="project-lead">Exploring the fundamentals of online shopping.</p><p class="project-copy">An e-commerce website project inspired by marketplace experiences. The build is an opportunity to work through the structure and interaction patterns of a shopping platform without assuming feature parity with a production marketplace.</p><div class="tech-stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Git</span></div><div class="project-actions"><button class="case-link" data-project="tokoclone">Explore case study <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/uasbackend" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+          <div class="project-detail"><div class="project-meta mono"><span>E-COMMERCE</span><span>COURSEWORK</span></div><h3>Tokoclone<span class="project-arrow">↗</span></h3><p class="project-lead">Exploring the fundamentals of online shopping.</p><p class="project-copy">An e-commerce website project inspired by marketplace experiences. The build is an opportunity to work through the structure and interaction patterns of a shopping platform without assuming feature parity with a production marketplace.</p><div class="tech-stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Git</span></div><div class="project-actions"><button class="case-link" data-project="tokoclone">Screens &amp; demo <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/uasbackend" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
         </article>
 
         <article class="project-row reverse reveal" data-category="mobile product">
           <div class="project-number mono">04 <span>/ 04</span></div>
           <div class="project-art art-loyalty" data-tilt>
+            <img class="project-cover" src="assets/project/LoyaltyMember/Loyalty5.png" alt="Mall loyalty member app dashboard screenshot">
             <div class="art-top mono"><span>LOYALTY / MOBILE</span><span>CASE_004</span></div>
             <div class="loyalty-phone"><div class="loyalty-notch"></div><div class="loyalty-brand">MEMBER<span>+</span><small>YOUR MALL, YOUR MOMENTS</small></div><div class="loyalty-card"><small>MEMBER CARD</small><b>FRANCESCO A.</b><span>•••• &nbsp; 2048</span><i>✳</i></div><div class="loyalty-section"><span>YOUR EXPERIENCE</span><b>Discover something worth coming back for.</b></div><div class="loyalty-tiles"><div>✦<small>MEMBERSHIP</small></div><div>⌁<small>DISCOVER</small></div><div>◷<small>ACTIVITY</small></div></div><div class="loyalty-bottom">HOME　 DISCOVER　 ACCOUNT</div></div>
             <div class="art-stamp mono">DIGITAL MEMBERSHIP</div>
           </div>
-          <div class="project-detail"><div class="project-meta mono"><span>CUSTOMER EXPERIENCE</span><span>MOBILE CONCEPT</span></div><h3>Mall Loyalty Member App<span class="project-arrow">↗</span></h3><p class="project-lead">Making the member experience more accessible.</p><p class="project-copy">A digital membership app concept for a mall environment. The project is framed around the member journey and how a mobile interface can help customers access membership-related experiences.</p><div class="tech-stack"><span>Mobile UI</span><span>Product design</span><span>Membership</span></div><div class="project-actions"><button class="case-link" data-project="loyalty">Explore case study <span>↗</span></button><span class="repo-link muted">Details available on request</span></div></div>
+          <div class="project-detail"><div class="project-meta mono"><span>CUSTOMER EXPERIENCE</span><span>MOBILE APP</span></div><h3>Mall Loyalty Member App<span class="project-arrow">↗</span></h3><p class="project-lead">Making the member experience more accessible.</p><p class="project-copy">A digital membership app concept for a mall environment. The project is framed around the member journey and how a mobile interface can help customers access membership-related experiences.</p><div class="tech-stack"><span>Flutter</span><span>Dart</span><span>Mobile UI</span><span>Product design</span><span>Membership</span></div><div class="project-actions"><button class="case-link" data-project="loyalty">Screens &amp; demo <span>↗</span></button><a class="repo-link" href="https://github.com/aryaravapradana/mobproguts" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></div>
         </article>
       </div>
-      <p class="visual-note mono">NOTE / PROJECT VISUALS ARE CONCEPTUAL UI RECREATIONS, NOT PRODUCT SCREENSHOTS.</p>
+      <p class="visual-note mono">PROJECT SCREENSHOTS / CAPTURED FROM THE PROVIDED BUILDS.</p>
     </section>
 
     <section class="manifesto-section" id="about">
-      <div class="manifesto-shell section-shell">
-        <div class="manifesto-side reveal">
-          <p class="eyebrow mono">02 / THE APPROACH</p>
-          <aside class="about-snapshot" aria-label="Profile snapshot">
-            <div class="about-snapshot-top mono"><span>PROFILE NOTES</span><span>02 — 05</span></div>
-            <div class="about-monogram" aria-hidden="true">F<span>/</span>A</div>
-            <p class="about-snapshot-kicker mono">THE SHORT VERSION</p>
-            <h3>Builder by practice.<br><em>Curious by default.</em></h3>
-            <p class="about-snapshot-copy">I like turning unclear problems into useful products, then explaining what I learn along the way.</p>
-            <div class="about-stats">
-              <div><strong>200+</strong><span>students supported</span></div>
-              <div><strong>30k+</strong><span>customers served</span></div>
-            </div>
-            <div class="about-values mono"><span>BUILD</span><i>·</i><span>TEACH</span><i>·</i><span>IMPROVE</span></div>
-          </aside>
+      <div class="about-compact section-shell">
+        <div class="about-compact-intro reveal">
+          <p class="eyebrow mono">02 / ABOUT</p>
+          <h2>Informatics student.<br><em>Product builder.</em></h2>
+          <p>I study at Tarumanagara University, build web and mobile products, teach programming, and run an online business.</p>
+          <div class="about-focus mono"><span>WEB &amp; MOBILE</span><i></i><span>TEACHING</span><i></i><span>ENTREPRENEURSHIP</span></div>
         </div>
-        <div class="manifesto-copy reveal"><p class="manifesto-label mono">NOT JUST CODE. CONTEXT.</p><h2>Good software starts with understanding <em>people.</em></h2><p class="manifesto-body">I’m studying Informatics at Tarumanagara University, but I’m interested in more than the implementation itself. I care about why a product needs to exist, who it serves, how a team works together, and what makes a solution useful beyond a demo.</p><p class="manifesto-body">Building projects, supporting students as a teaching assistant, and running an online business have each taught me a different part of the same lesson: technology matters most when it solves a real problem.</p><div class="manifesto-signature"><span class="signature-mark">F.</span><span><b>Francesco Alexander</b><small>DEVELOPER / LIFELONG STUDENT</small></span></div></div>
+        <div class="about-proof reveal" aria-label="Selected experience and achievements">
+          <article class="about-proof-item"><span class="mono">TEACHING ASSISTANT</span><strong data-count="400+">0+</strong><p>students supported</p></article>
+          <article class="about-proof-item"><span class="mono">ONLINE BUSINESS</span><strong data-count="30000+" data-count-compact="true">0+</strong><p>customers served</p></article>
+          <article class="about-proof-item about-proof-award"><span class="mono">CURRENT STATUS</span><strong>IT Enthusiast</strong><p>Open to work · Internships &amp; opportunities</p></article>
+        </div>
       </div>
     </section>
 
     <section class="experience-section section-shell" id="experience">
-      <div class="section-top reveal"><div><p class="eyebrow mono">03 / EXPERIENCE</p><h2>Learning by<br><em>doing.</em></h2></div><p class="section-intro">Different environments have sharpened different skills — from explaining technical concepts to understanding customers and coordinating work.</p></div>
+      <div class="section-top reveal"><div><p class="eyebrow mono">03 / EXPERIENCE</p><h2>Work, teach,<br><em>build.</em></h2></div><p class="experience-aside mono">A FEW FRAMES<br>FROM THE DAY-TO-DAY <span>↘</span></p></div>
       <div class="experience-list">
-        <article class="experience-item reveal"><div class="experience-date mono">2025 — PRESENT</div><div class="experience-symbol">⌘</div><div class="experience-content"><div class="experience-title"><h3>Teaching Assistant</h3><span>Faculty of Information Technology · UNTAR</span></div><p>Support teaching and practical learning across programming and systems subjects, helping students work through concepts, coding exercises, and debugging. Experience across 7 classes and 200+ students.</p><div class="experience-tags"><span>Technical communication</span><span>Mentoring</span><span>Problem-solving</span></div></div><span class="experience-index mono">EXP.01</span></article>
-        <article class="experience-item reveal"><div class="experience-date mono">2021 — PRESENT</div><div class="experience-symbol symbol-lime">↗</div><div class="experience-content"><div class="experience-title"><h3>Online Business Owner</h3><span>Independent · itemku.com</span></div><p>Operate an online business and manage customer-facing workflows. Experience serving 30,000+ customers has built practical instincts around market needs, communication, service quality, and operations.</p><div class="experience-tags"><span>Entrepreneurship</span><span>Customer experience</span><span>Operations</span></div></div><span class="experience-index mono">EXP.02</span></article>
-        <article class="experience-item reveal"><div class="experience-date mono">2019 — 2023</div><div class="experience-symbol symbol-purple">✳</div><div class="experience-content"><div class="experience-title"><h3>Private Mathematics Tutor</h3><span>Independent</span></div><p>Taught mathematics to more than 15 elementary school students, adapting explanations and learning approaches to make concepts easier to understand.</p><div class="experience-tags"><span>Communication</span><span>Adaptability</span><span>Teaching</span></div></div><span class="experience-index mono">EXP.03</span></article>
-        <article class="experience-item reveal"><div class="experience-date mono">CAMPUS LIFE</div><div class="experience-symbol symbol-orange">↗</div><div class="experience-content"><div class="experience-title"><h3>Organization & Event Involvement</h3><span>Tarumanagara English Club · Campus Event Crews</span></div><p>Participated in campus organizations and event operations, building experience in teamwork, coordination, and communication across different groups.</p><div class="experience-tags"><span>Teamwork</span><span>Coordination</span><span>Communication</span></div></div><span class="experience-index mono">EXP.04</span></article>
+        <article class="experience-case experience-teaching reveal">
+          <div class="experience-visual" data-gallery-images="assets/Work/LecturerAssistant/BackEndProgrammingTID2025.jpg|assets/Work/LecturerAssistant/DataStructureTIB2025.jpg|assets/Work/LecturerAssistant/OperatingSystemSIA2025.jpg|assets/Work/LecturerAssistant/FundamentalProgrammingTIS2026.jpg" tabindex="0" aria-label="Classroom photo gallery. Use left and right arrow keys to browse."><img src="assets/Work/LecturerAssistant/BackEndProgrammingTIC2025.jpg" alt="Francesco supporting a programming class at UNTAR" loading="lazy"><span class="experience-visual-tag mono">CLASSROOM / 01</span><span class="experience-visual-caption">People first.<br><i>Then the code.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous classroom photo">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 05</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next classroom photo">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
+          <div class="experience-story"><div class="experience-case-meta mono"><span>2025 — PRESENT</span><span>UNTAR · FACULTY OF IT</span></div><p class="experience-kicker mono">TEACHING ASSISTANT</p><h3>Making hard topics<br><em>click.</em></h3><p class="experience-description">Support programming and systems classes by helping students work through concepts, exercises, and debugging.</p><div class="experience-impact"><strong>400+</strong><span>students across<br>7 classes</span></div></div>
+        </article>
+        <article class="experience-case experience-business reveal">
+          <div class="experience-visual" data-gallery-images="assets/Work/OnlineShop/OnlineShop2.png|assets/Work/OnlineShop/OnlineShop3.png|assets/Work/OnlineShop/OnlineShop4.png|assets/Work/OnlineShop/OnlineShop5.png" tabindex="0" aria-label="Online shop image gallery. Use left and right arrow keys to browse."><img src="assets/Work/OnlineShop/OnlineShop1.png" alt="Online shop and customer experience" loading="lazy"><span class="experience-visual-tag mono">ONLINE STORE / 02</span><span class="experience-visual-caption">A business built<br><i>one customer at a time.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous store image">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 05</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next store image">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
+          <div class="experience-story"><div class="experience-case-meta mono"><span>2021 — PRESENT</span><span>INDEPENDENT · ITEMKU</span></div><p class="experience-kicker mono">ONLINE BUSINESS</p><h3>From listings<br>to <em>loyalty.</em></h3><p class="experience-description">Run an online shop and handle the day-to-day customer experience, learning directly from a growing marketplace.</p><div class="experience-impact"><strong>30k+</strong><span>customers<br>served</span></div></div>
+        </article>
+        <article class="experience-case experience-tutoring reveal">
+          <div class="experience-visual experience-tutor-gallery" data-gallery-images="assets/Work/PrivateTutor/PrivateTutor2.jpeg" tabindex="0" aria-label="Private tutoring photo gallery. Use left and right arrow keys to browse."><img src="assets/Work/PrivateTutor/PrivateTutor1.jpeg" alt="Private tutoring session with a student working through a worksheet" loading="lazy"><span class="experience-visual-tag mono">STUDY SESSION / 03</span><span class="experience-visual-caption">Small steps.<br><i>Big “aha” moments.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous tutoring photo">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 02</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next tutoring photo">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
+          <div class="experience-story"><div class="experience-case-meta mono"><span>2019 — 2023</span><span>INDEPENDENT</span></div><p class="experience-kicker mono">PRIVATE TUTOR</p><h3>Learning at<br><em>their own pace.</em></h3><p class="experience-description">One-to-one tutoring across subjects, with sessions shaped around each student’s goals, pace, and learning style.</p><div class="experience-impact"><strong>15+</strong><span>students<br>taught</span></div></div>
+        </article>
+        <article class="experience-case experience-eventcrew reveal">
+          <div class="experience-visual" data-gallery-images="assets/Work/EventCrew/EventCrew2.jpeg|assets/Work/EventCrew/EventCrew3.jpeg|assets/Work/EventCrew/EventCrew4.jpeg|assets/Work/EventCrew/EventCrew5.jpeg|assets/Work/EventCrew/EventCrew6.jpeg|assets/Work/EventCrew/EventCrew7.jpeg|assets/Work/EventCrew/EventCrew8.jpeg|assets/Work/EventCrew/EventCrew9.jpeg|assets/Work/EventCrew/EventCrew10.jpeg" tabindex="0" aria-label="PRJ event crew photo gallery. Use left and right arrow keys to browse."><img src="assets/Work/EventCrew/EventCrew1.jpeg" alt="Kopi Tubruk Gadjah booth and event crew at PRJ" loading="lazy"><span class="experience-visual-tag mono">DJARUM · PRJ 2026</span><span class="experience-visual-caption">Good events<br><i>run on good crews.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous event crew photo">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 10</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next event crew photo">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
+          <div class="experience-story"><div class="experience-case-meta mono"><span>JUN — JUL 2026</span><span>DJARUM GROUP · SAVORIA</span></div><p class="experience-kicker mono">KOPI TUBRUK GADJAH · EVENT CREW</p><h3>Keeping the booth<br><em>in motion.</em></h3><p class="experience-description">Looked after the self-service area, photobooth, and booth games—helping visitors enjoy each part of the Kopi Tubruk Gadjah experience.</p><div class="experience-award"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 5h12v6a6 6 0 0 1-12 0V5ZM10 8H5v2a6 6 0 0 0 6 6m11-8h5v2a6 6 0 0 1-6 6m-5 3v5m-5 3h10m-8-3h6l2 3H11l2-3Z"/></svg><span><small class="mono">BEST BOOTH · PRJ 2026</small><b>Overall Best Booth Winner</b></span><i aria-hidden="true">↗</i></div></div>
+        </article>
       </div>
-    </section>
-
-    <section class="gallery-section section-shell" id="gallery">
-      <div class="section-top reveal">
-        <div>
-          <p class="eyebrow mono">04 / PROOF OF WORK</p>
-          <h2>Behind the<br><em>scenes.</em></h2>
-        </div>
-        <p class="section-intro">Real moments from real work — teaching, building, presenting, and shipping. More coming soon.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item gallery-item--tall reveal" data-label="Teaching Assistant · UNTAR">
-          <div class="gallery-placeholder">
-            <span class="gallery-tag mono">Teaching Assistant</span>
-            <span class="gallery-icon">⌘</span>
-            <p>Classroom & Mentoring Sessions</p>
-            <small>UNTAR · 7 classes · 200+ students</small>
-          </div>
-        </div>
-        <div class="gallery-item reveal" data-label="Online Business · itemku">
-          <div class="gallery-placeholder">
-            <span class="gallery-tag mono">Entrepreneurship</span>
-            <span class="gallery-icon">↗</span>
-            <p>E-commerce Store & Metrics</p>
-            <small>itemku · 30k+ customers served</small>
-          </div>
-        </div>
-        <div class="gallery-item reveal" data-label="Project Demo · MyPSKD">
-          <div class="gallery-placeholder">
-            <span class="gallery-tag mono">Mobile Project</span>
-            <span class="gallery-icon">◈</span>
-            <p>MyPSKD LMS App in Action</p>
-            <small>Flutter · Dart · Firebase</small>
-          </div>
-        </div>
-        <div class="gallery-item gallery-item--wide reveal" data-label="Team Work · UCCD Project">
-          <div class="gallery-placeholder">
-            <span class="gallery-tag mono">Team Leadership</span>
-            <span class="gallery-icon">✳</span>
-            <p>UCCD Student Hub Collaboration</p>
-            <small>Team sprint & presentation</small>
-          </div>
-        </div>
-        <div class="gallery-item reveal" data-label="Campus Life · Events">
-          <div class="gallery-placeholder">
-            <span class="gallery-tag mono">Campus Engagement</span>
-            <span class="gallery-icon">◷</span>
-            <p>English Club & Event Operations</p>
-            <small>Event committee & logistics</small>
-          </div>
-        </div>
-        <div class="gallery-item reveal" data-label="Achievements · Certificates">
-          <div class="gallery-placeholder">
-            <span class="gallery-tag mono">Recognition</span>
-            <span class="gallery-icon">✦</span>
-            <p>Certifications & Achievements</p>
-            <small>Academic & technical milestones</small>
-          </div>
-        </div>
-      </div>
-      <p class="gallery-note mono">GALLERY IS BEING CURATED — PHOTOS ADDED AS COLLECTED</p>
     </section>
 
     <section class="capabilities-section" id="toolkit">
       <div class="section-shell capabilities-inner">
-        <div class="capabilities-head reveal"><p class="eyebrow mono">05 / TOOLKIT</p><h2>Tools are tools.<br><em>Judgment is the skill.</em></h2><p>Technologies I’ve worked with across coursework, projects, and experimentation. Depth varies by tool and context.</p></div>
+        <div class="capabilities-head reveal"><figure class="toolkit-illustration"><img src="assets/skill.png" alt="Illustration of a head with gears, representing creative problem-solving and technical skills." loading="lazy"></figure><p class="eyebrow mono">04 / TOOLKIT</p><h2>Skills in<br><em>practice.</em></h2><p class="toolkit-description">Code, data, and people skills I use to turn ideas into working products.</p></div>
         <div class="capability-grid">
-          <div class="capability-card reveal"><span class="cap-num mono">01 / BUILD</span><div class="cap-icon">⌘</div><h3>Software Development</h3><p>Turning requirements into maintainable application flows.</p><div class="cap-tags"><span>JavaScript</span><span>C++</span><span>Flutter / Dart</span><span>Node.js</span><span>Express</span><span>Git</span></div></div>
-          <div class="capability-card reveal"><span class="cap-num mono">02 / CONNECT</span><div class="cap-icon cap-purple">⌁</div><h3>Backend & Data</h3><p>Working with application services, authentication, and persistence.</p><div class="cap-tags"><span>Firebase</span><span>Firestore</span><span>MongoDB</span><span>Prisma</span><span>MySQL</span></div></div>
-          <div class="capability-card reveal"><span class="cap-num mono">03 / EXPLORE</span><div class="cap-icon cap-orange">✳</div><h3>Data & AI</h3><p>Exploring applied machine learning and computer vision approaches.</p><div class="cap-tags"><span>Machine Learning</span><span>NLP</span><span>Computer Vision</span><span>MediaPipe</span><span>MobileNetV3</span><span>SVM</span><span>Random Forest</span><span>BERT</span></div></div>
-          <div class="capability-card reveal"><span class="cap-num mono">04 / ENABLE</span><div class="cap-icon cap-lime">↗</div><h3>People & Product</h3><p>Bridging implementation with communication, context, and delivery.</p><div class="cap-tags"><span>Technical mentoring</span><span>Teamwork</span><span>Problem-solving</span><span>Product thinking</span><span>Entrepreneurship</span></div></div>
+          <article class="capability-card capability-dev reveal"><span class="cap-index mono" aria-hidden="true">DEV</span><div class="capability-label"><span class="cap-icon">&lt;/&gt;</span><div><h3>Code &amp; interfaces</h3><p>Web · mobile · application flows</p></div></div><div class="cap-tags"><span>JavaScript</span><span>C++</span><span>Flutter</span><span>Dart</span><span>Node.js</span><span>Express</span><span>Git</span></div><span class="capability-arrow" aria-hidden="true">↗</span></article>
+          <article class="capability-card capability-data reveal"><span class="cap-index mono" aria-hidden="true">DATA</span><div class="capability-label"><span class="cap-icon cap-purple"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg></span><div><h3>Backend &amp; data</h3><p>APIs · authentication · storage</p></div></div><div class="cap-tags"><span>Firebase</span><span>Firestore</span><span>MongoDB</span><span>Prisma</span><span>MySQL</span></div><span class="capability-arrow" aria-hidden="true">↗</span></article>
+          <article class="capability-card capability-ai reveal"><span class="cap-index mono" aria-hidden="true">AI / ML</span><div class="capability-label"><span class="cap-icon cap-orange cap-chatgpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg></span><div><h3>Machine learning</h3><p>Language · models · computer vision</p></div></div><div class="cap-tags"><span>Machine Learning</span><span>NLP</span><span>Computer Vision</span><span>MediaPipe</span><span>MobileNetV3</span><span>SVM</span><span>Random Forest</span><span>BERT</span></div><span class="capability-arrow" aria-hidden="true">↗</span></article>
+          <article class="capability-card capability-people reveal"><span class="cap-index mono" aria-hidden="true">TEAM</span><div class="capability-label"><span class="cap-icon cap-lime"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4.2"/><path d="M3.5 21c.4-4.5 4-7.6 8.5-7.6s8.1 3.1 8.5 7.6v1h-17z"/></svg></span><div><h3>People &amp; product</h3><p>Teaching · collaboration · delivery</p></div></div><div class="cap-tags"><span>Technical mentoring</span><span>Teamwork</span><span>Problem-solving</span><span>Product thinking</span><span>Entrepreneurship</span></div><span class="capability-arrow" aria-hidden="true">↗</span></article>
         </div>
       </div>
     </section>
 
-    <section class="education-section section-shell reveal">
-      <div class="education-left"><p class="eyebrow mono">A CONTINUOUS PROCESS</p><h2>Curiosity is<br>part of the <em>stack.</em></h2></div>
-      <div class="education-right"><div class="education-item"><span class="mono">EDUCATION / 01</span><h3>Universitas Tarumanagara</h3><p>Bachelor’s Degree · Informatics</p><small>Currently studying</small></div><div class="education-item"><span class="mono">FOUNDATION / 02</span><h3>High School</h3><p>Graduated in 2024</p><small>Academic foundation</small></div><div class="education-note">Always learning. Always iterating. Always looking for the next problem worth solving.</div></div>
+    <section class="education-section section-shell reveal" id="education">
+      <div class="education-intro">
+        <p class="eyebrow mono">EDUCATION · UNTAR</p>
+        <h2>Informatics<br><em>at UNTAR.</em></h2>
+        <p class="education-program">Faculty of Information Technology<br>Universitas Tarumanagara · Jakarta</p>
+        <div class="education-metrics">
+          <div class="education-metric education-gpa"><span class="mono">CURRENT GPA</span><strong>3.94 <small>/ 4.00</small></strong></div>
+          <div class="education-metric education-semester"><span class="mono">CURRENTLY IN</span><strong>Semester 5</strong></div>
+        </div>
+        <a class="education-watch-link" href="https://www.instagram.com/reel/DN5QmVtETQp/" target="_blank" rel="noopener noreferrer" aria-label="Watch the FTI UNTAR Reel on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1"/></svg><span>WATCH FOR MORE<br>ON INSTAGRAM</span><i aria-hidden="true">↗</i></a>
+      </div>
+      <div class="education-media">
+        <div class="education-campus-stage">
+          <span class="education-campus-orbit education-campus-orbit-one" aria-hidden="true"></span><span class="education-campus-orbit education-campus-orbit-two" aria-hidden="true"></span>
+          <span class="education-campus-backplate" aria-hidden="true"></span>
+          <figure class="education-campus"><img src="assets/UNTAR.jpg" alt="Universitas Tarumanagara campus building in Jakarta" loading="lazy" decoding="async"></figure>
+          <div class="education-campus-brand"><span class="education-brand-mark" aria-hidden="true">U</span><span><b>UNTAR</b><small>UNIVERSITAS TARUMANAGARA</small></span></div>
+          <span class="education-campus-cap" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m3 12 13-7 13 7-13 7-13-7Z"/><path d="M8 15v7c5 4 11 4 16 0v-7M29 12v8"/><circle cx="29" cy="22" r="1.5"/></svg></span>
+          <span class="education-campus-dots" aria-hidden="true">· · ·<br>· · ·<br>· · ·</span>
+        </div>
+      </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-orb orb-one"></div><div class="contact-orb orb-two"></div>
-      <div class="contact-inner section-shell reveal"><p class="eyebrow mono"><span class="eyebrow-line"></span> 06 / NEXT CHAPTER</p><h2>Have a problem<br>worth <em>solving?</em></h2><p>I’m open to internship opportunities, collaborative projects, and conversations about building useful things.</p><div class="contact-actions"><a class="button button-light magnetic" href="mailto:francescoalexander@example.com">Start a conversation <span>↗</span></a><a class="button button-outline magnetic" href="https://github.com/Perancesco" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a></div><div class="contact-links mono"><button id="copyEmail" data-email="francescoalexander@example.com">COPY EMAIL <span>⧉</span></button><a href="https://github.com/Perancesco" target="_blank" rel="noreferrer">GITHUB ↗</a><span>JAKARTA, ID</span></div><p class="contact-note">Replace the example email with your preferred contact address before publishing.</p></div>
+    <section class="contact-section contact-redesign" id="contact">
+      <div class="contact-orb orb-one" aria-hidden="true"></div><div class="contact-orb orb-two" aria-hidden="true"></div>
+      <div class="contact-inner section-shell reveal">
+        <div class="contact-copy">
+          <p class="eyebrow mono"><span class="eyebrow-line"></span> 05 / LET’S CONNECT</p>
+          <h2>Let’s<br><em>connect.</em></h2>
+          <p>I’m open to new opportunities, collaborative projects, and good conversations about tech and ideas.</p>
+          <div class="contact-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>JAKARTA, INDONESIA</span><i></i></div>
+        </div>
+        <div class="contact-network" aria-hidden="true">
+          <svg viewBox="0 0 340 560" preserveAspectRatio="none"><circle cx="150" cy="280" r="125"/><circle cx="150" cy="280" r="158"/><path d="M244 225 C280 185 274 55 338 55"/><path d="M260 245 C292 220 295 160 338 160"/><path d="M275 280 C300 280 308 280 338 280"/><path d="M260 315 C292 340 295 400 338 400"/><path d="M244 335 C280 375 274 505 338 505"/><circle cx="239" cy="225" r="4"/><circle cx="255" cy="245" r="4"/><circle cx="270" cy="280" r="4"/><circle cx="255" cy="315" r="4"/><circle cx="239" cy="335" r="4"/></svg>
+          <span class="contact-core">FA</span><span class="contact-network-note mono">FIND ME HERE</span>
+        </div>
+        <nav class="contact-list" aria-label="Contact and social links">
+          <a class="contact-card" href="mailto:francescoalexander1234@gmail.com"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="contact-card-copy"><strong>Email</strong><small>francescoalexander1234@gmail.com</small></span><i aria-hidden="true">↗</i></a>
+          <a class="contact-card" href="https://www.linkedin.com/in/francesco-alexander-48ba1733b/" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon-text">in</span><span class="contact-card-copy"><strong>LinkedIn</strong><small>Let’s connect professionally</small></span><i aria-hidden="true">↗</i></a>
+          <a class="contact-card" href="https://github.com/Perancesco" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.2-.4-3.8 1.4a13 13 0 0 0-6.9 0C5.4 1.2 4.2 1.6 4.2 1.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></span><span class="contact-card-copy"><strong>GitHub</strong><small>Explore my projects</small></span><i aria-hidden="true">↗</i></a>
+          <a class="contact-card" href="https://www.instagram.com/francesco.alx/" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8"/></svg></span><span class="contact-card-copy"><strong>Instagram</strong><small>@francesco.alx</small></span><i aria-hidden="true">↗</i></a>
+          <a class="contact-card" href="assets/Francesco_Alexander_CV.pdf" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6z"/><path d="M14 2v6h6M9 13h7m-7 4h7"/></svg></span><span class="contact-card-copy"><strong>Resume / CV</strong><small>View or download my CV</small></span><i aria-hidden="true">↗</i></a>
+        </nav>
+      </div>
     </section>
+    <div class="project-page" id="projectPage" hidden></div>
   </main>
   <footer class="site-footer"><a class="wordmark footer-wordmark" href="#top"><span class="mark">F<span>/</span></span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a><span class="footer-note mono">DESIGNED TO EVOLVE / © <span id="year">2026</span></span><a class="back-top mono" href="#top">BACK TO TOP ↑</a></footer>
 
-  <dialog class="case-modal" id="caseModal"><button class="modal-close" id="modalClose" aria-label="Close case study">×</button><div id="modalContent"></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
 </body>
 </html>
