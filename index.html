@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=88">
-  <script defer src="script.js?v=46"></script>
+  <link rel="stylesheet" href="styles.css?v=90">
+  <script defer src="script.js?v=47"></script>
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
@@ -19,8 +19,8 @@
   <div class="cursor cursor-dot" aria-hidden="true"></div><div class="cursor cursor-ring" aria-hidden="true"></div>
   <header class="site-header" id="top">
     <a class="wordmark" href="#top" aria-label="Francesco Alexander, home"><span class="mark">FA</span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a>
-    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#work"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>Projects</a><a href="#about"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>About</a><a href="#experience"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h7"/></svg>Experience</a><a href="#toolkit"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>Toolkit</a><a href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Contact</a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation"><a href="#education"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.8 2.7 8.2 2.7 12 0v-5M22 9v6"/></svg>Education</a><a href="#about"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>About</a><a href="#work"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>Projects</a>
+      <a href="#experience"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h7"/></svg>Experience</a><a href="#toolkit"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>Toolkit</a><a href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Contact</a>
     </nav>
     <a class="availability" href="#contact"><i></i> OPEN TO OPPORTUNITIES <b>↗</b></a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
@@ -30,7 +30,7 @@
     <section class="hero section-shell" id="home">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span><span>DEVELOPER</span><i></i><span>TECHNICAL MENTOR</span><i></i><span>BUILDER</span></p>
+          <p class="eyebrow hero-eyebrow"><span class="mono">01 / PROFILE</span><span class="eyebrow-line"></span><span>DEVELOPER</span><i></i><span>TECHNICAL MENTOR</span><i></i><span>BUILDER</span></p>
           <h1>Ideas are<br>cheap.<br><span class="headline-outline">Execution</span><br>is <em>everything.</em></h1>
           <p class="hero-roleline"><span class="role-prefix">I’m a</span> <span id="typingRole" aria-live="polite">developer</span><span class="typing-caret" aria-hidden="true"></span></p>
           <p class="hero-description">I’m Francesco — an Informatics student and developer who likes turning messy problems into useful digital products. I build across web and mobile, lead projects, and teach others how to think through code.</p>
@@ -78,12 +78,51 @@
       <div class="hero-bottom"><span class="mono">SCROLL TO EXPLORE</span><span class="scroll-line"><i></i></span><span class="mono">PROJECTS ↓</span></div>
     </section>
 
+    <section class="education-section section-shell reveal" id="education">
+      <div class="education-intro">
+        <p class="eyebrow mono">02 / EDUCATION · UNTAR</p>
+        <h2>Informatics<br><em>at UNTAR.</em></h2>
+        <p class="education-program">Faculty of Information Technology<br>Universitas Tarumanagara · Jakarta</p>
+        <div class="education-metrics">
+          <div class="education-metric education-gpa"><span class="mono">CURRENT GPA</span><strong>3.94 <small>/ 4.00</small></strong></div>
+          <div class="education-metric education-semester"><span class="mono">CURRENTLY IN</span><strong>Semester 5</strong></div>
+        </div>
+        <a class="education-watch-link" href="https://www.instagram.com/reel/DN5QmVtETQp/" target="_blank" rel="noopener noreferrer" aria-label="Watch the FTI UNTAR Reel on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1"/></svg><span>WATCH FOR MORE<br>ON INSTAGRAM</span><i aria-hidden="true">↗</i></a>
+      </div>
+      <div class="education-media">
+        <div class="education-campus-stage">
+          <span class="education-campus-orbit education-campus-orbit-one" aria-hidden="true"></span><span class="education-campus-orbit education-campus-orbit-two" aria-hidden="true"></span>
+          <span class="education-campus-backplate" aria-hidden="true"></span>
+          <figure class="education-campus"><img src="assets/UNTAR.jpg" alt="Universitas Tarumanagara campus building in Jakarta" loading="lazy" decoding="async"></figure>
+          <div class="education-campus-brand"><span class="education-brand-mark" aria-hidden="true">U</span><span><b>UNTAR</b><small>UNIVERSITAS TARUMANAGARA</small></span></div>
+          <span class="education-campus-cap" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m3 12 13-7 13 7-13 7-13-7Z"/><path d="M8 15v7c5 4 11 4 16 0v-7M29 12v8"/><circle cx="29" cy="22" r="1.5"/></svg></span>
+          <span class="education-campus-dots" aria-hidden="true">· · ·<br>· · ·<br>· · ·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto-section" id="about">
+      <div class="about-compact section-shell">
+        <div class="about-compact-intro reveal">
+          <p class="eyebrow mono">03 / ABOUT</p>
+          <h2>Informatics student.<br><em>Product builder.</em></h2>
+          <p>I study at Tarumanagara University, build web and mobile products, teach programming, and run an online business.</p>
+          <div class="about-focus mono"><span>WEB &amp; MOBILE</span><i></i><span>TEACHING</span><i></i><span>ENTREPRENEURSHIP</span></div>
+        </div>
+        <div class="about-proof reveal" aria-label="Selected experience and achievements">
+          <article class="about-proof-item"><span class="mono">TEACHING ASSISTANT</span><strong data-count="400+">0+</strong><p>students supported</p></article>
+          <article class="about-proof-item"><span class="mono">ONLINE BUSINESS</span><strong data-count="30000+" data-count-compact="true">0+</strong><p>customers served</p></article>
+          <article class="about-proof-item about-proof-award"><span class="mono">CURRENT STATUS</span><strong>IT Enthusiast</strong><p>Open to work · Internships &amp; opportunities</p></article>
+        </div>
+      </div>
+    </section>
+
     <section class="signal-strip" aria-label="Experience highlights"><div class="signal-track"><span>SOFTWARE DEVELOPMENT</span><i>✳</i><span>PRODUCT THINKING</span><i>✳</i><span>TECHNICAL MENTORING</span><i>✳</i><span>ENTREPRENEURSHIP</span><i>✳</i><span>WEB &amp; MOBILE</span><i>✳</i><span>FULL-STACK</span><i>✳</i><span>SOFTWARE DEVELOPMENT</span><i>✳</i><span>PRODUCT THINKING</span><i>✳</i><span>TECHNICAL MENTORING</span><i>✳</i><span>ENTREPRENEURSHIP</span><i>✳</i><span>WEB &amp; MOBILE</span><i>✳</i><span>FULL-STACK</span><i>✳</i></div></section>
 
     <section class="work-section section-shell" id="work">
       <div class="work-divider reveal" aria-label="Projects section">
         <div class="work-divider-inner">
-          <div class="work-divider-index"><span>01</span><i></i></div>
+          <div class="work-divider-index"><span>04</span><i></i></div>
           <div class="work-divider-title"><small class="mono">PROJECT ARCHIVE</small><strong>PROJECTS</strong></div>
           <div class="work-divider-rail" aria-hidden="true"><span></span></div>
           <span class="work-divider-note mono">PAST BUILDS <b>→</b> PROOF</span>
@@ -148,24 +187,10 @@
       <p class="visual-note mono">PROJECT SCREENSHOTS / CAPTURED FROM THE PROVIDED BUILDS.</p>
     </section>
 
-    <section class="manifesto-section" id="about">
-      <div class="about-compact section-shell">
-        <div class="about-compact-intro reveal">
-          <p class="eyebrow mono">02 / ABOUT</p>
-          <h2>Informatics student.<br><em>Product builder.</em></h2>
-          <p>I study at Tarumanagara University, build web and mobile products, teach programming, and run an online business.</p>
-          <div class="about-focus mono"><span>WEB &amp; MOBILE</span><i></i><span>TEACHING</span><i></i><span>ENTREPRENEURSHIP</span></div>
-        </div>
-        <div class="about-proof reveal" aria-label="Selected experience and achievements">
-          <article class="about-proof-item"><span class="mono">TEACHING ASSISTANT</span><strong data-count="400+">0+</strong><p>students supported</p></article>
-          <article class="about-proof-item"><span class="mono">ONLINE BUSINESS</span><strong data-count="30000+" data-count-compact="true">0+</strong><p>customers served</p></article>
-          <article class="about-proof-item about-proof-award"><span class="mono">CURRENT STATUS</span><strong>IT Enthusiast</strong><p>Open to work · Internships &amp; opportunities</p></article>
-        </div>
-      </div>
-    </section>
+
 
     <section class="experience-section section-shell" id="experience">
-      <div class="section-top reveal"><div><p class="eyebrow mono">03 / EXPERIENCE</p><h2>Work, teach,<br><em>build.</em></h2></div><p class="experience-aside mono">A FEW FRAMES<br>FROM THE DAY-TO-DAY <span>↘</span></p></div>
+      <div class="section-top reveal"><div><p class="eyebrow mono">05 / EXPERIENCE</p><h2>Work, teach,<br><em>build.</em></h2></div><p class="experience-aside mono">A FEW FRAMES<br>FROM THE DAY-TO-DAY <span>↘</span></p></div>
       <div class="experience-list">
         <article class="experience-case experience-teaching reveal">
           <div class="experience-visual" data-gallery-images="assets/Work/LecturerAssistant/BackEndProgrammingTID2025.jpg|assets/Work/LecturerAssistant/DataStructureTIB2025.jpg|assets/Work/LecturerAssistant/OperatingSystemSIA2025.jpg|assets/Work/LecturerAssistant/FundamentalProgrammingTIS2026.jpg" tabindex="0" aria-label="Classroom photo gallery. Use left and right arrow keys to browse."><img src="assets/Work/LecturerAssistant/BackEndProgrammingTIC2025.jpg" alt="Francesco supporting a programming class at UNTAR" loading="lazy"><span class="experience-visual-tag mono">CLASSROOM / 01</span><span class="experience-visual-caption">People first.<br><i>Then the code.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous classroom photo">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 05</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next classroom photo">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
@@ -176,7 +201,7 @@
           <div class="experience-story"><div class="experience-case-meta mono"><span>2021 — PRESENT</span><span>INDEPENDENT · ITEMKU</span></div><p class="experience-kicker mono">ONLINE BUSINESS</p><h3>From listings<br>to <em>loyalty.</em></h3><p class="experience-description">Run an online shop and handle the day-to-day customer experience, learning directly from a growing marketplace.</p><div class="experience-impact"><strong>30k+</strong><span>customers<br>served</span></div></div>
         </article>
         <article class="experience-case experience-tutoring reveal">
-          <div class="experience-visual experience-tutor-gallery" data-gallery-images="assets/Work/PrivateTutor/PrivateTutor2.jpeg" tabindex="0" aria-label="Private tutoring photo gallery. Use left and right arrow keys to browse."><img src="assets/Work/PrivateTutor/PrivateTutor1.jpeg" alt="Private tutoring session with a student working through a worksheet" loading="lazy"><span class="experience-visual-tag mono">STUDY SESSION / 03</span><span class="experience-visual-caption">Small steps.<br><i>Big “aha” moments.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous tutoring photo">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 02</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next tutoring photo">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
+          <div class="experience-visual experience-tutor-gallery" data-gallery-images="assets/Work/PrivateTutor/PrivateTutor2.jpeg|assets/Work/PrivateTutor/PrivateTutor3.jpeg|assets/Work/PrivateTutor/PrivateTutor4.jpeg" tabindex="0" aria-label="Private tutoring photo gallery. Use left and right arrow keys to browse."><img src="assets/Work/PrivateTutor/PrivateTutor1.jpeg" alt="Private tutoring session with a student working through a worksheet" loading="lazy"><span class="experience-visual-tag mono">STUDY SESSION / 03</span><span class="experience-visual-caption">Small steps.<br><i>Big “aha” moments.</i></span><div class="experience-gallery-controls"><button type="button" class="experience-gallery-arrow" data-gallery-step="-1" aria-label="Previous tutoring photo">←</button><span class="experience-gallery-count mono" aria-live="polite">01 / 04</span><button type="button" class="experience-gallery-arrow" data-gallery-step="1" aria-label="Next tutoring photo">→</button></div><span class="experience-gallery-timer" aria-hidden="true"><i></i></span></div>
           <div class="experience-story"><div class="experience-case-meta mono"><span>2019 — 2023</span><span>INDEPENDENT</span></div><p class="experience-kicker mono">PRIVATE TUTOR</p><h3>Learning at<br><em>their own pace.</em></h3><p class="experience-description">One-to-one tutoring across subjects, with sessions shaped around each student’s goals, pace, and learning style.</p><div class="experience-impact"><strong>15+</strong><span>students<br>taught</span></div></div>
         </article>
         <article class="experience-case experience-eventcrew reveal">
@@ -188,7 +213,7 @@
 
     <section class="capabilities-section" id="toolkit">
       <div class="section-shell capabilities-inner">
-        <div class="capabilities-head reveal"><figure class="toolkit-illustration"><img src="assets/skill.png" alt="Illustration of a head with gears, representing creative problem-solving and technical skills." loading="lazy"></figure><p class="eyebrow mono">04 / TOOLKIT</p><h2>Skills in<br><em>practice.</em></h2><p class="toolkit-description">Code, data, and people skills I use to turn ideas into working products.</p></div>
+        <div class="capabilities-head reveal"><figure class="toolkit-illustration"><img src="assets/skill.png" alt="Illustration of a head with gears, representing creative problem-solving and technical skills." loading="lazy"></figure><p class="eyebrow mono">06 / TOOLKIT</p><h2>Skills in<br><em>practice.</em></h2><p class="toolkit-description">Code, data, and people skills I use to turn ideas into working products.</p></div>
         <div class="capability-grid">
           <article class="capability-card capability-dev reveal"><span class="cap-index mono" aria-hidden="true">DEV</span><div class="capability-label"><span class="cap-icon">&lt;/&gt;</span><div><h3>Code &amp; interfaces</h3><p>Web · mobile · application flows</p></div></div><div class="cap-tags"><span>JavaScript</span><span>C++</span><span>Flutter</span><span>Dart</span><span>Node.js</span><span>Express</span><span>Git</span></div><span class="capability-arrow" aria-hidden="true">↗</span></article>
           <article class="capability-card capability-data reveal"><span class="cap-index mono" aria-hidden="true">DATA</span><div class="capability-label"><span class="cap-icon cap-purple"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg></span><div><h3>Backend &amp; data</h3><p>APIs · authentication · storage</p></div></div><div class="cap-tags"><span>Firebase</span><span>Firestore</span><span>MongoDB</span><span>Prisma</span><span>MySQL</span></div><span class="capability-arrow" aria-hidden="true">↗</span></article>
@@ -198,34 +223,11 @@
       </div>
     </section>
 
-    <section class="education-section section-shell reveal" id="education">
-      <div class="education-intro">
-        <p class="eyebrow mono">EDUCATION · UNTAR</p>
-        <h2>Informatics<br><em>at UNTAR.</em></h2>
-        <p class="education-program">Faculty of Information Technology<br>Universitas Tarumanagara · Jakarta</p>
-        <div class="education-metrics">
-          <div class="education-metric education-gpa"><span class="mono">CURRENT GPA</span><strong>3.94 <small>/ 4.00</small></strong></div>
-          <div class="education-metric education-semester"><span class="mono">CURRENTLY IN</span><strong>Semester 5</strong></div>
-        </div>
-        <a class="education-watch-link" href="https://www.instagram.com/reel/DN5QmVtETQp/" target="_blank" rel="noopener noreferrer" aria-label="Watch the FTI UNTAR Reel on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1"/></svg><span>WATCH FOR MORE<br>ON INSTAGRAM</span><i aria-hidden="true">↗</i></a>
-      </div>
-      <div class="education-media">
-        <div class="education-campus-stage">
-          <span class="education-campus-orbit education-campus-orbit-one" aria-hidden="true"></span><span class="education-campus-orbit education-campus-orbit-two" aria-hidden="true"></span>
-          <span class="education-campus-backplate" aria-hidden="true"></span>
-          <figure class="education-campus"><img src="assets/UNTAR.jpg" alt="Universitas Tarumanagara campus building in Jakarta" loading="lazy" decoding="async"></figure>
-          <div class="education-campus-brand"><span class="education-brand-mark" aria-hidden="true">U</span><span><b>UNTAR</b><small>UNIVERSITAS TARUMANAGARA</small></span></div>
-          <span class="education-campus-cap" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m3 12 13-7 13 7-13 7-13-7Z"/><path d="M8 15v7c5 4 11 4 16 0v-7M29 12v8"/><circle cx="29" cy="22" r="1.5"/></svg></span>
-          <span class="education-campus-dots" aria-hidden="true">· · ·<br>· · ·<br>· · ·</span>
-        </div>
-      </div>
-    </section>
-
     <section class="contact-section contact-redesign" id="contact">
       <div class="contact-orb orb-one" aria-hidden="true"></div><div class="contact-orb orb-two" aria-hidden="true"></div>
       <div class="contact-inner section-shell reveal">
         <div class="contact-copy">
-          <p class="eyebrow mono"><span class="eyebrow-line"></span> 05 / LET’S CONNECT</p>
+          <p class="eyebrow mono"><span class="eyebrow-line"></span> 07 / LET’S CONNECT</p>
           <h2>Let’s<br><em>connect.</em></h2>
           <p>I’m open to new opportunities, collaborative projects, and good conversations about tech and ideas.</p>
           <div class="contact-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>JAKARTA, INDONESIA</span><i></i></div>
@@ -239,13 +241,18 @@
           <a class="contact-card" href="https://www.linkedin.com/in/francesco-alexander-48ba1733b/" target="_blank" rel="noopener noreferrer"><span class="contact-icon contact-icon-text">in</span><span class="contact-card-copy"><strong>LinkedIn</strong><small>Let’s connect professionally</small></span><i aria-hidden="true">↗</i></a>
           <a class="contact-card" href="https://github.com/Perancesco" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.2-.4-3.8 1.4a13 13 0 0 0-6.9 0C5.4 1.2 4.2 1.6 4.2 1.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></span><span class="contact-card-copy"><strong>GitHub</strong><small>Explore my projects</small></span><i aria-hidden="true">↗</i></a>
           <a class="contact-card" href="https://www.instagram.com/francesco.alx/" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8"/></svg></span><span class="contact-card-copy"><strong>Instagram</strong><small>@francesco.alx</small></span><i aria-hidden="true">↗</i></a>
-          <a class="contact-card" href="assets/Francesco_Alexander_CV.pdf" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6z"/><path d="M14 2v6h6M9 13h7m-7 4h7"/></svg></span><span class="contact-card-copy"><strong>Resume / CV</strong><small>View or download my CV</small></span><i aria-hidden="true">↗</i></a>
+          <a class="contact-card" href="assets/Francesco_Alexander_CV.pdf" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6z"/><path d="M14 2v6h6M9 13h7m-7 4h7"/></svg></span><span class="contact-card-copy"><strong>CV</strong><small>View or download my latest CV</small></span><i aria-hidden="true">↗</i></a>
+          <a class="contact-card" href="assets/Resume%20Formal%20Francesco%20Alexander.pdf" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6z"/><path d="M14 2v6h6M9 13h7m-7 4h7"/></svg></span><span class="contact-card-copy"><strong>Formal Resume</strong><small>View or download my formal resume</small></span><i aria-hidden="true">↗</i></a>
         </nav>
       </div>
     </section>
     <div class="project-page" id="projectPage" hidden></div>
   </main>
-  <footer class="site-footer"><a class="wordmark footer-wordmark" href="#top"><span class="mark">F<span>/</span></span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a><span class="footer-note mono">DESIGNED TO EVOLVE / © <span id="year">2026</span></span><a class="back-top mono" href="#top">BACK TO TOP ↑</a></footer>
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#home" aria-label="Francesco Alexander, back to home"><span class="mark">FA</span><span class="wordmark-text">FRANCESCO<span>ALEXANDER</span></span></a>
+    <span class="footer-note mono">DESIGNED TO EVOLVE / © <span id="year">2026</span></span>
+    <a class="back-top" href="#home" data-back-top aria-label="Back to top"><span>BACK TO TOP</span><i aria-hidden="true">↑</i></a>
+  </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
 </body>

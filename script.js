@@ -803,6 +803,12 @@
   /* ── ACTIVE NAV HIGHLIGHT ON SCROLL ──────────── */
   const sections = $$('section[id]');
   const navLinks = $$('.nav-links a');
+  $('[data-back-top]')?.addEventListener('click', event => {
+    event.preventDefault();
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#home`);
+  });
   const activeObs = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
